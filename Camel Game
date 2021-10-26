@@ -1,0 +1,26 @@
+import random
+
+print ('Welcome to Camel!')
+print ('You have stolen a camel to make your way across the great Mobi desert.')
+print ('The natives want their camel back and are chasing you down! Survive your desert trek and outrun the natives.')
+print ('Please choose from the following options')
+
+done = False
+player_miles = 0
+native_miles = -20
+thirst = 0
+tiredness = 0
+canteen = 3
+oasis = -1
+
+while not done:
+    print('A. Drink from your canteen')
+    print ('B. Ahead moderate speed')
+    print ('C. Ahead full speed')
+    print ('D. Stop for the night')
+    print ('E. Status check')
+    print ('F. Quit')
+    user_choice = input ("Your input: ")
+
+    if user_choice.upper() == 'F':
+        done = True
